@@ -402,14 +402,21 @@ header {
 }
 
 @media (max-width: 1375px) {
-    .text { display: none; }
+  .text {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
-    header, section {
-        padding: 18px 40px;
-    }
+  header,
+  section {
+    padding: 18px 40px;
+  }
+  .form-container form {
+    left: 40px;
+  }
 }
+
 
 @media (max-width: 881px) {
     .home {
@@ -517,24 +524,46 @@ header {
 }
 
 @media (max-width: 460px) {
-    header {
-        padding: 6px 14px;
-    }
-    .logo img {
-        width: 30px;
-    }
-    section {
-        padding: 50px 6px;
-    }
-    .header-btn .sign-in {
-        padding: 7px 10px;
-        font-size: 14px;
-        font-weight: 400;
-    }
-    .text h1 {
-        font-size: 2rem;
-    }
-    .services-container {
-        grid-template-columns: repeat(auto-fit, minmax(254px, auto));
-    }
+  header {
+    padding: 6px 14px;
+  }
+
+  .logo img {
+    width: 30px;
+  }
+
+  section {
+    padding: 50px 6px;
+  }
+
+  .header-btn .sign-in {
+    padding: 7px 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .text h1 {
+    font-size: 2rem;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .text h1 {
+    font-size: 1.6rem;
+  }
+
+  .form-container form {
+    padding: 1rem;
+  }
+
+  .input-box input {
+    font-size: 0.875rem;
+  }
+
+  .reviews-container {
+    grid-template-columns: 1fr;
+  }
 }
